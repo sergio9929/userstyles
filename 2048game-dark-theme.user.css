@@ -1,0 +1,103 @@
+/* ==UserStyle==
+@name         2048game dark theme
+@version      20220809.17.57
+@namespace    userstyles.world/user/sergio9929
+@description  2048game dark theme
+@author       sergio9929 (https://sergio-rodriguez.web.app/)
+@license      No License
+==/UserStyle== */
+
+@-moz-document domain("2048game.com") {
+    html, body {
+        background-color: hsl(0 0% 5%);
+        color: hsl(0 0% 70%);
+    }
+    
+    .title a {
+        color: hsl(220 50% 50%);
+    }
+    
+    .side-column {
+        border: none;
+        background: hsl(0 0% 5%);
+    }
+    
+    .game-container {
+        background-color: hsl(0 0% 10%)
+    }
+    
+    .score-container, .best-container {
+        background-color: hsl(0 0% 15%);
+    }
+    
+    .score-container:after, .best-container:after {
+        color: hsl(0 0% 100% / 50%);
+    }
+    
+    .game-container .game-message.game-won {
+        color: hsl(0 0% 100%);
+        background-color: hsl(220 50% 50% / 50%);
+    }
+    
+    .game-container .game-message a, .restart-button {
+        color: hsl(0 0% 100%);
+        background-color: hsl(180 50% 50%);
+    }
+    
+    .grid-cell {
+        background-color: hsl(0 0% 4%);
+    }
+    
+    .tile .tile-inner {
+        color: hsl(0 0% 100%) !important;
+    }
+    
+    .tile.tile-2 .tile-inner {
+        background-color: hsl(0 0% 15%);
+    }
+    
+    .tile.tile-4 .tile-inner {
+        background-color: hsl(120 10% 20%);
+    }
+    
+    .tile.tile-8 .tile-inner {
+        background-color: hsl(60 50% 30%);
+    }
+    
+    .tile.tile-16 .tile-inner {
+        background-color: hsl(0 40% 25%);
+    }
+    
+    .tile.tile-32 .tile-inner {
+        background-color: hsl(290 20% 30%);
+    }
+    
+    .tile.tile-64 .tile-inner {
+        background-color: hsl(220 50% 40%);
+    }
+    
+    .tile.tile-128 .tile-inner {
+        background-color: hsl(60, 60%, 50%);
+        box-shadow: 0 0 30px 10px hsl(60 60% 50% / 50%), inset 0 0 0 1px hsl(0 0% 100% / 20%);
+    }
+    
+    .tile.tile-256 .tile-inner {
+        background-color: hsl(15 50% 50%);
+        box-shadow: 0 0 30px 10px hsl(15 50% 50% / 50%), inset 0 0 0 1px hsl(0 0% 100% / 20%);
+    }
+    
+    .tile.tile-512 .tile-inner {
+        background-color: hsl(320 50% 50%);
+        box-shadow: 0 0 30px 10px hsl(320 50% 50% / 50%), inset 0 0 0 1px hsl(0 0% 100% / 20%);
+    }
+    
+    .tile.tile-1024 .tile-inner {
+        background-color: hsl(180 50% 50%);
+        box-shadow: 0 0 30px 10px hsl(180 50% 50% / 50%), inset 0 0 0 1px hsl(0 0% 100% / 20%);
+    }
+    
+    .tile.tile-2048 .tile-inner {
+        background-color: hsl(220 50% 50%);
+        box-shadow: 0 0 30px 10px hsl(220 50% 50% / 50%), inset 0 0 0 1px hsl(0 0% 100% / 20%);
+    }
+}

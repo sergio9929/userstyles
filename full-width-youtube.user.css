@@ -1,0 +1,185 @@
+/* ==UserStyle==
+@name           Full width youtube
+@homepageURL    https://userstyles.world/style/538/full-width-youtube
+@namespace      userstyles.world/user/sergio9929
+@version        20241107.0.0
+@description    Take advantage of your large screen
+@author         sergio9929 (https://sergio-rodriguez.web.app/)
+
+@preprocessor   stylus
+@var            select      timeline    "Custom timeline"          {
+  "Off*":                   "0",
+  "Normal":                 "100",
+  "Cinematic lighting":     "50",
+  "Light cinematic":        "15",
+}
+@var            select      comments    "More readable comments"   {
+  "Off":                    "0",
+  "Recommended*":           "80rem",
+  "Wide":                   "120ch",
+}
+@var            checkbox    progress    "Solid progress bar"       0
+==/UserStyle== */
+@-moz-document url-prefix("https://www.youtube.com/watch") {
+    :root {
+        --sergio-margin: var(--ytd-margin-3x);
+    }
+
+    #columns {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #primary {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #player {
+        /* prevent overflow of cinematic lighting */
+        contain: layout;
+    }
+
+    #player-container-outer {
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: calc(100vh - 100px) !important;
+    }
+
+    #player-container-inner #player-container {
+        max-height: calc(100vh - 100px) !important;
+    }
+
+    #player-container-inner .html5-video-container video {
+        width: 100% !important;
+        height: auto !important;
+        left: 0 !important;
+        max-height: calc(100vh - 100px) !important;
+    }
+
+    #player-container-inner .ytp-tooltip.ytp-bottom {
+        top: auto !important;
+        bottom: 50px !important;
+    }
+
+    #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview:not(.ytp-text-detail) {
+        bottom: 100px !important;
+    }
+
+    #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview.ytp-text-detail {
+        bottom: 50px !important;
+    }
+
+    .ytp-fit-cover-video .html5-main-video {
+        object-fit: contain;
+    }
+
+    if comments {
+        #bottom-row.ytd-watch-metadata {
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+        #bottom-row > .ytd-watch-metadata,
+        #description-inner.ytd-watch-metadata,
+        ytd-metadata-row-container-renderer,
+        #expandable-metadata,
+        #ticket-shelf,
+        #merch-shelf,
+        #comments {
+            font-size: 15px;
+            line-height: 1.5;
+            max-width: comments;
+            min-width: auto;
+            display: block;
+            margin-inline: auto;
+            width: 100%;
+        }
+
+        #bottom-row > #description {
+            max-width: 100%;
+        }
+
+        ytd-watch-metadata[has-teaser-carousel]:not([description-collapsed]) #teaser-carousel.ytd-watch-metadata {
+            width: auto;
+        }
+
+        #info-container {
+            margin-bottom: 1em;
+        }
+
+        #info-container .animated-rolling-number-wiz {
+            font-size: 15px;
+        }
+
+        #content-text.ytd-comment-renderer {
+            font-size: inherit;
+        }
+
+        #paid-comment-background.ytd-comment-renderer,
+        #comment.ytd-comment-thread-renderer {
+            border-radius: var(--sergio-margin);
+        }
+    }
+
+    if timeline > 0 {
+        @media (min-width: 1800px) {
+            #player-container-inner .ytp-tooltip.ytp-bottom {
+                bottom: 80px !important;
+            }
+
+            #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview:not(.ytp-text-detail) {
+                bottom: 120px !important;
+                margin-left: var(--sergio-margin) !important;
+            }
+
+            #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview.ytp-text-detail {
+                bottom: 80px !important;
+            }
+
+            #player-container-inner .ytp-chrome-bottom {
+                padding: var(--sergio-margin) !important;
+                padding-bottom: 0 !important;
+                background-color: hsla(0, 0%, 5.88%, timeline * 1%) !important;
+                border-radius: var(--sergio-margin) !important;
+                bottom: var(--sergio-margin) !important;
+                if timeline < 100 {
+                    backdrop-filter: blur(timeline * 2px) !important;
+                }
+
+                /* left: var(--sergio-margin) !important;
+                right: var(--sergio-margin) !important;
+                margin: auto !important; */
+            }
+
+            #player-container-inner .ytp-progress-bar-container {
+                width: calc(100% - var(--sergio-margin) * 2);
+                left: var(--sergio-margin);
+            }
+
+            #player-container-inner .ytp-left-controls {
+                margin-left: calc(-1 * var(--sergio-margin));
+            }
+
+            #player-container-inner .ytp-right-controls {
+                margin-right: calc(-1 * var(--sergio-margin));
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix("https://www.youtube.com") {
+    if progress {
+        /* html[refresh],
+        [refresh] {
+            --yt-spec-static-brand-red: #f00;
+            --yt-spec-static-overlay-background-brand: rgba(204, 0, 0, 0.9);
+            --yt-spec-static-brand-black: #212121;
+        } */
+        #progress,
+        .ytp-cairo-refresh-signature-moments .ytp-play-progress,
+        .ytp-cairo-refresh .ytp-swatch-background-color {
+            background: var(--yt-spec-static-brand-red) !important;
+        }
+    }
+}

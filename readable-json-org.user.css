@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           Readable json.org
+@namespace      userstyles.world/user/sergio9929
+@version        1.0.1
+@description    Make json.org more readable and modern without taking away its charm.
+@author         sergio9929 (https://sergio-rodriguez.web.app/)
+==/UserStyle== */
+@-moz-document domain("json.org") {
+    body {
+        max-width: 50rem !important;
+        width: 100%;
+        margin: 0 auto !important;
+        line-height: 1.5 !important;
+        padding: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .fancy h1,
+    .fancy h2,
+    .fancy h3,
+    .fancy h4,
+    .fancy_title {
+        margin-inline: 0 !important;
+        margin-block: 2em 1em !important;
+    }
+
+    .fancy p,
+    .fancy ul,
+    .fancy ol,
+    .fancy dl {
+        margin-inline: 0 !important;
+        margin-block-end: 1.5em !important;
+    }
+
+    .fancy ul,
+    .fancy ol,
+    .fancy dl {
+        padding-inline-start: 2em !important;
+    }
+
+    .fancy blockquote {
+        margin-block: 1.5em !important;
+        margin-inline: 0 !important;
+        padding-inline: 2em !important;
+    }
+
+    .fancy .columns {
+        padding: 0 !important;
+    }
+
+    .fancy .codeblock {
+        margin: 0 !important;
+        display: block !important;
+        overflow: auto !important;
+    }
+
+    .fancy .codeblock pre {
+        margin: 0 !important;
+        display: block !important;
+    }
+}
