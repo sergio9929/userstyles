@@ -1,24 +1,26 @@
 /* ==UserStyle==
 @name           Full width youtube
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
+@supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20241107.0.0
+@version        20241130.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
 @preprocessor   stylus
-@var            select      timeline    "Custom timeline"          {
+@var            select      timeline    "Custom timeline"           {
   "Off*":                   "0",
   "Normal":                 "100",
   "Cinematic lighting":     "50",
   "Light cinematic":        "15",
 }
-@var            select      comments    "More readable comments"   {
+@var            select      comments    "More readable comments"    {
   "Off":                    "0",
   "Recommended*":           "80rem",
   "Wide":                   "120ch",
 }
-@var            checkbox    progress    "Solid progress bar"       0
+@var            checkbox    fill-screen "Zoom to fill full screen"  0
+@var            checkbox    progress    "Solid progress bar"        0
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.youtube.com/watch") {
     :root {
@@ -70,8 +72,22 @@
         bottom: 50px !important;
     }
 
-    .ytp-fit-cover-video .html5-main-video {
+    #movie_player .html5-main-video {
         object-fit: contain;
+    }
+
+    if fill-screen {
+        #movie_player.ytp-fullscreen .html5-video-container {
+            height: 100% !important;
+        }
+
+        #movie_player.ytp-fullscreen .html5-main-video {
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+        }
     }
 
     if comments {
