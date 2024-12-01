@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20241130.0.0
+@version        20241130.0.1
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -19,7 +19,7 @@
   "Recommended*":           "80rem",
   "Wide":                   "120ch",
 }
-@var            checkbox    fill-screen "Zoom to fill full screen"  0
+@var            checkbox    fill-screen "Zoom to Fill full screen"  0
 @var            checkbox    progress    "Solid progress bar"        0
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.youtube.com/watch") {

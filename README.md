@@ -17,7 +17,7 @@ Install Stylus:
 
 Applies to: YouTube
 
-[![Full width youtube](https://userstyles.world/preview/538/3.webp)](https://userstyles.world/style/538/full-width-youtube)
+[![Full width youtube](https://userstyles.world/preview/538/5.webp)](https://userstyles.world/style/538/full-width-youtube)
 
 Home page: https://userstyles.world/style/538/full-width-youtube
 
