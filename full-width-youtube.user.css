@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20241130.0.1
+@version        20241203.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -114,6 +114,7 @@
 
         #bottom-row > #description {
             max-width: 100%;
+            padding-inline: 12px;
         }
 
         ytd-watch-metadata[has-teaser-carousel]:not([description-collapsed]) #teaser-carousel.ytd-watch-metadata {
