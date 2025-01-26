@@ -1,8 +1,9 @@
 /* ==UserStyle==
 @name           Max - Why is everything a slider now?
 @homepageURL    https://userstyles.world/style/17486/max-why-is-everything-a-slider-now
+@supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        1.0.3
+@version        1.0.5
 @description    Transform sliders into normal grids
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -30,13 +31,13 @@
     }
 
     if my-list {
-        [data-sonic-id="home-page-rail-my-list"] #tileList > div {
+        [data-sonic-id*="-my-list"] #tileList > div {
             flex-flow: wrap;
         }
     }
 
     if watching {
-        [data-sonic-id="home-page-rail-continue-watching"] #tileList > div {
+        [data-sonic-id*="-continue-watching"] #tileList > div {
             flex-flow: wrap;
         }
     }
