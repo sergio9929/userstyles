@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20250126.0.0
+@version        20250202.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -41,6 +41,34 @@
         /* prevent overflow of cinematic lighting */
         contain: layout;
     }
+
+    /*
+     * ========= START: YOUTUBE BUG =========
+     * fix youtube's bug where the channel card overflows the sidebar.
+     * detected on 2025-2-2.
+     * check back in a month or so.
+     */
+    #info-section.ytd-channel-renderer {
+        flex-direction: column;
+    }
+
+    #avatar-section.ytd-channel-renderer {
+        max-width: 168px !important;
+        min-width: initial !important;
+        margin-right: 0;
+        padding-right: 8px;
+    }
+
+    #avatar-section.ytd-channel-renderer .channel-link.ytd-channel-renderer {
+        height: 100%;
+    }
+
+    #avatar.ytd-channel-renderer {
+        width: auto;
+    }
+    /*
+     * ========= END: YOUTUBE BUG ===========
+     */
 
     #player-container-outer {
         width: 100% !important;
