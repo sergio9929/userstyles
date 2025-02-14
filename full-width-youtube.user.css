@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20250202.0.0
+@version        20250214.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -220,8 +220,8 @@
             --yt-spec-static-brand-black: #212121;
         } */
         #progress,
-        .ytp-cairo-refresh-signature-moments .ytp-play-progress,
-        .ytp-cairo-refresh .ytp-swatch-background-color {
+        .ytp-play-progress,
+        .ytp-swatch-background-color {
             background: var(--yt-spec-static-brand-red) !important;
         }
     }
