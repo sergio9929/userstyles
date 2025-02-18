@@ -1,7 +1,8 @@
 /* ==UserStyle==
 @name         Pocketbase dark theme
 @homepageURL  https://userstyles.world/style/10395/pocketbase-dark-theme
-@version      20241019.0.0
+@supportURL   https://github.com/sergio9929/userstyles/issues
+@version      20250218.0.0
 @namespace    https://userstyles.world/user/sergio9929
 @description  Pocketbase dark theme.
 @author       sergio9929 (https://sergio-rodriguez.web.app/)
@@ -45,10 +46,17 @@
 
 
 
+    table td,
+    table th {
+        background-color: var(--baseColor);
+    }
+
     hr,
     .separator {
         background: var(--baseAlt2Color);
     }
+
+
 
     .page-header-wrapper {
         background-color: rgb(22 22 25);
