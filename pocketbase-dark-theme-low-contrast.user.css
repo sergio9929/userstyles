@@ -2,7 +2,7 @@
 @name         Pocketbase dark theme - low contrast
 @homepageURL  https://userstyles.world/style/10395/pocketbase-dark-theme-low-contrast
 @supportURL   https://github.com/sergio9929/userstyles/issues
-@version      20250220.0.0
+@version      20250223.0.0
 @namespace    https://userstyles.world/user/sergio9929
 @description  Pocketbase dark theme for the admin and official docs.Inpired by Vue's color scheme.
 @author       sergio9929 (https://sergio-rodriguez.web.app/)
@@ -48,9 +48,9 @@
 
     table td,
     table th {
-        background-color: var(--baseColor);
+        background-color: transparent;
     }
-    
+
     mark {
         color: inherit;
         padding: 0 .3em;
@@ -60,13 +60,13 @@
     .separator {
         background: var(--baseAlt2Color);
     }
-    
+
     .dropdown {
         background-color: var(--baseColor);
     }
-    
+
     .searchbar .pagefind-ui__result {
-        border: 1px solid var(--baseAlt2Color);
+        background-color: var(--baseAlt1Color);
     }
 
 
