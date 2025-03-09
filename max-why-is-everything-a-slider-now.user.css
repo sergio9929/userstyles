@@ -3,22 +3,22 @@
 @homepageURL    https://userstyles.world/style/17486/max-why-is-everything-a-slider-now
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        1.0.5
+@version        1.0.6
 @description    Transform sliders into normal grids
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
 @preprocessor   stylus
-@var            checkbox    show-page       "The show page"     1
+@var            checkbox    show-page       "The Show's Page"   1
 @var            checkbox    top             "Top 10"            1
 @var            checkbox    watching        "Continue Watching" 1
 @var            checkbox    my-list         "My List"           0
 @var            checkbox    collections     "Collections"       0
-@var            checkbox    themed          "Themed section"    0
+@var            checkbox    themed          "Themed Section"    0
 @var            checkbox    all             "All"               0
 ==/UserStyle== */
 @-moz-document domain("max.com") {
     if show-page {
-        #tab-content-generic-show-page-rail-episodes-tab #tileList > div {
+        [id^="tab-content-generic-show-page"] #tileList > div {
             flex-flow: wrap;
         }
     }
