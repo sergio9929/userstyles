@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20250219.0.0
+@version        20250324.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -168,7 +168,7 @@
     }
 
     if timeline > 0 {
-        @media (min-width: 1800px) {
+        @media (min-width: 1800px) and (min-aspect-ratio: 17/9) {
             #player-container-inner .ytp-tooltip.ytp-bottom {
                 bottom: 80px !important;
             }
@@ -222,7 +222,7 @@
         #progress,
         .ytp-play-progress,
         .ytp-swatch-background-color {
-            background: var(--yt-spec-static-brand-red) !important;
+            background: var(--yt-spec-static-brand-red, #f03) !important;
         }
     }
 
