@@ -2,7 +2,7 @@
 @name         Vero tweaks for PC
 @homepageURL  https://sergio9929.github.io/vero-userstyle/
 @supportURL   https://github.com/sergio9929/userstyles/issues
-@version      20250328.0.0
+@version      20250413.0.0
 @namespace    userstyles.world/user/sergio9929
 @description  Some tweaks to how posts are displayed in Vero for PC
 @author       sergio9929 (https://sergio-rodriguez.web.app/)
@@ -23,10 +23,10 @@
     }
 
     ._profile-page-container_5n5yl_1,
-    ._profile-page-container_1ibxg_10 {
+    ._profile-page-container_1ibxg_10,
+    ._profile-page-container_8vceq_10 {
         background-color: transparent;
 
-        ._blurred-image-background_18ar0_1,
         ._blurred-image-background_18ar0_1 {
             opacity: .1 !important;
             filter: blur(100px) !important;
@@ -41,7 +41,8 @@
             }
 
             ._top-bar-row_5n5yl_46,
-            ._posts_1ibxg_42 {
+            ._posts_1ibxg_42,
+            ._posts_8vceq_42 {
                 max-width: 1920px !important;
                 width: 100% !important;
                 padding: 0 calc(100vw * .02666667);
@@ -162,7 +163,8 @@
 
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
-        ._post-thumbnail-container_1cp95_10 {
+        ._post-thumbnail-container_1cp95_10,
+        ._post-thumbnail-container_v2hxm_10 {
             if square {
                 aspect-ratio: 1;
             }
@@ -181,20 +183,23 @@
         }
 
         ._user-profile-post-container_tl1o6_10:hover,
-        ._post-thumbnail-container_1cp95_10:hover {
+        ._post-thumbnail-container_1cp95_10:hover,
+        ._post-thumbnail-container_v2hxm_10:hover {
             transform: scale(1.05);
             box-shadow: 0px 0px 0px 4px rgb(0 204 204), 0px 10px 45px -10px rgb(0 0 0 / 90%);
             z-index: 1;
         }
 
         ._user-profile-post-container_tl1o6_10:active,
-        ._post-thumbnail-container_1cp95_10:active {
+        ._post-thumbnail-container_1cp95_10:active,
+        ._post-thumbnail-container_v2hxm_10:active {
             transition: transform .1s ease-out, box-shadow .25s;
             transform: scale(1);
         }
 
         ._user-profile-post-content_tl1o6_98,
-        ._post-thumbnail-content_1cp95_151 {
+        ._post-thumbnail-content_1cp95_151,
+        ._post-thumbnail-content_v2hxm_152 {
             padding-top: 0;
             position: absolute;
             inset: 0;
@@ -204,12 +209,14 @@
         }
 
         ._user-profile-post-container_tl1o6_10:hover ._user-profile-post-content_tl1o6_98,
-        ._post-thumbnail-container_1cp95_10:hover ._post-thumbnail-content_1cp95_151 {
+        ._post-thumbnail-container_1cp95_10:hover ._post-thumbnail-content_1cp95_151,
+        ._post-thumbnail-container_v2hxm_10:hover ._post-thumbnail-content_v2hxm_152 {
             transform: scale(1);
         }
 
         ._user-profile-post-footer_tl1o6_135,
-        ._post-thumbnail-footer_1cp95_192 {
+        ._post-thumbnail-footer_1cp95_192,
+        ._post-thumbnail-footer_v2hxm_193 {
             background: linear-gradient(rgba(0, 0, 0, .5) 0%, transparent 50%);
             padding: 15px;
             width: 100%;
@@ -388,10 +395,12 @@
 
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/music") {
     ._profile-page-container_5n5yl_1,
-    ._profile-page-container_1ibxg_10 {
+    ._profile-page-container_1ibxg_10,
+    ._profile-page-container_8vceq_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
-        ._post-thumbnail-container_1cp95_10 {
+        ._post-thumbnail-container_1cp95_10,
+        ._post-thumbnail-container_v2hxm_10 {
             aspect-ratio: 1;
         }
     }
@@ -399,10 +408,12 @@
 
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/movies.*") {
     ._profile-page-container_5n5yl_1,
-    ._profile-page-container_1ibxg_10 {
+    ._profile-page-container_1ibxg_10,
+    ._profile-page-container_8vceq_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
-        ._post-thumbnail-container_1cp95_10 {
+        ._post-thumbnail-container_1cp95_10,
+        ._post-thumbnail-container_v2hxm_10 {
             aspect-ratio: 2 / 3;
         }
     }
@@ -410,10 +421,12 @@
 
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/videos") {
     ._profile-page-container_5n5yl_1,
-    ._profile-page-container_1ibxg_10 {
+    ._profile-page-container_1ibxg_10,
+    ._profile-page-container_8vceq_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
-        ._post-thumbnail-container_1cp95_10 {
+        ._post-thumbnail-container_1cp95_10,
+        ._post-thumbnail-container_v2hxm_10 {
             aspect-ratio: 3 / 2;
         }
     }
