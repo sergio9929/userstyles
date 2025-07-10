@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Max - Why is everything a slider now?
+@name           HBO Max - Why is everything a slider now?
 @homepageURL    https://userstyles.world/style/17486/max-why-is-everything-a-slider-now
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        1.0.6
+@version        1.0.7
 @description    Transform sliders into normal grids
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -16,7 +16,7 @@
 @var            checkbox    themed          "Themed Section"    0
 @var            checkbox    all             "All"               0
 ==/UserStyle== */
-@-moz-document domain("max.com") {
+@-moz-document domain("max.com"), domain("hbomax.com") {
     if show-page {
         [id^="tab-content-generic-show-page"] #tileList > div {
             flex-flow: wrap;

@@ -23,13 +23,13 @@ Home page: https://userstyles.world/style/538/full-width-youtube
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://userstyles.world/api/style/538.user.css)
 
-### Max - Why is everything a slider now?
+### HBO Max - Why is everything a slider now?
 
 Applies to: HBO Max
 
-[![Max - Why is everything a slider now?](https://userstyles.world/preview/17486/0.webp)](https://userstyles.world/style/17486/max-why-is-everything-a-slider-now)
+[![HBO Max - Why is everything a slider now?](https://userstyles.world/preview/17486/0.webp)](https://userstyles.world/style/17486/hbo-max-why-is-everything-a-slider-now)
 
-Home page: https://userstyles.world/style/17486/max-why-is-everything-a-slider-now
+Home page: https://userstyles.world/style/17486/hbo-max-why-is-everything-a-slider-now
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://userstyles.world/api/style/17486.user.css)
 
