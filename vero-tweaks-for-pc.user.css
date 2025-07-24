@@ -2,7 +2,7 @@
 @name         Vero tweaks for PC
 @homepageURL  https://sergio9929.github.io/vero-userstyle/
 @supportURL   https://github.com/sergio9929/userstyles/issues
-@version      20250413.0.0
+@version      20250724.0.0
 @namespace    userstyles.world/user/sergio9929
 @description  Some tweaks to how posts are displayed in Vero for PC
 @author       sergio9929 (https://sergio-rodriguez.web.app/)
@@ -33,7 +33,8 @@
         }
 
         if wide {
-            ._header_1ibxg_39 {
+            ._header_1ibxg_39,
+            ._header_8vceq_39 {
                 max-width: 1920px !important;
                 width: 100% !important;
                 padding: 0 calc(100vw * .02666667);
@@ -112,7 +113,8 @@
             }
 
             ._profile-page-scrollable-centered-child_5n5yl_158,
-            ._tabs-bar_1ibxg_41 {
+            ._tabs-bar_1ibxg_41,
+            ._tabs-bar_8vceq_41 {
                 max-width: 1920px !important;
                 width: 100% !important;
                 padding: 0 calc(100vw * .02666667);
