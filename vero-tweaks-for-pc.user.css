@@ -2,7 +2,7 @@
 @name         Vero tweaks for PC
 @homepageURL  https://sergio9929.github.io/vero-userstyle/
 @supportURL   https://github.com/sergio9929/userstyles/issues
-@version      20250724.0.0
+@version      20251013.0.0
 @namespace    userstyles.world/user/sergio9929
 @description  Some tweaks to how posts are displayed in Vero for PC
 @author       sergio9929 (https://sergio-rodriguez.web.app/)
@@ -24,7 +24,8 @@
 
     ._profile-page-container_5n5yl_1,
     ._profile-page-container_1ibxg_10,
-    ._profile-page-container_8vceq_10 {
+    ._profile-page-container_8vceq_10,
+    ._profile-page-container_1jt5a_10 {
         background-color: transparent;
 
         ._blurred-image-background_18ar0_1 {
@@ -34,7 +35,8 @@
 
         if wide {
             ._header_1ibxg_39,
-            ._header_8vceq_39 {
+            ._header_8vceq_39,
+            ._header_1jt5a_39 {
                 max-width: 1920px !important;
                 width: 100% !important;
                 padding: 0 calc(100vw * .02666667);
@@ -42,8 +44,10 @@
             }
 
             ._top-bar-row_5n5yl_46,
+            ._tabs-bar_1jt5a_41,
             ._posts_1ibxg_42,
-            ._posts_8vceq_42 {
+            ._posts_8vceq_42,
+            ._posts_1jt5a_42 {
                 max-width: 1920px !important;
                 width: 100% !important;
                 padding: 0 calc(100vw * .02666667);
@@ -51,81 +55,45 @@
             }
 
             @media (min-width: 769px) {
-                ._user-profile-header-columns-wrapper_d2qyt_13 {
-                    grid-template-columns: minmax(224px, auto) 1fr;
+                ._user-profile-header-columns-wrapper_d2qyt_13,
+                ._user-profile-header-columns-wrapper_yxhar_13 {
                     gap: 16px 48px;
-                    min-height: auto;
-                    padding-bottom: 36px;
                 }
 
-                ._left-column_d2qyt_20 {
-                    grid-row: span 2;
-                }
-
-                ._middle-column_d2qyt_24 {
+                ._middle-column_d2qyt_24,
+                ._middle-column_yxhar_22 {
                     padding: 0;
                 }
 
-                ._middle-column_1li20_22 {
+                ._middle-column_1li20_22,
+                ._middle-column_yxhar_22 {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: center;
                 }
-
-                ._right-column_d2qyt_27 {
-                    grid-column: 2 / -1 !important;
-                    display: flex;
-                    gap: 48px;
-                }
-
-                ._user-profile-header-container_d2qyt_10 ._connections-metrics-container_d2qyt_117 ._connections-number_d2qyt_120,
-                ._user-profile-header-container_d2qyt_10 ._connections-metrics-container_d2qyt_117 ._connections-subtitle_d2qyt_127 {
-                    text-align: inherit;
-                }
             }
 
-            ._posts-menu-row_5n5yl_15 {
-                display: grid;
-                justify-content: left;
-            }
-
-            ._tabs-bar-anchor_5n5yl_135 {
+            ._tabs-bar-anchor_5n5yl_135,
+            ._tabs-bar-anchor_1jt5a_133 {
                 grid-column: 1;
                 grid-row: 1;
                 width: 100%;
             }
 
             ._tabs-bar-container_5n5yl_93,
+            ._tabs-bar-container_99ns3_10,
             ._tabs-bar-container_99ns3_10 {
                 grid-column: 1;
                 grid-row: 1;
-                width: auto;
+                width: fit-content;
                 max-width: 100%;
                 overflow: hidden;
                 position: static;
             }
 
-            ._tabs-bar-sticked-top_5n5yl_122 {
-                position: absolute;
-                left: calc(100vw * .02666667);
-                right: calc(100vw * .02666667);
-            }
-
-            ._profile-page-scrollable-centered-child_5n5yl_158,
-            ._tabs-bar_1ibxg_41,
-            ._tabs-bar_8vceq_41 {
-                max-width: 1920px !important;
-                width: 100% !important;
-                padding: 0 calc(100vw * .02666667);
-                display: flex;
-            }
-
-            ._profile-page-scrollable_5n5yl_139 {
-                padding: 0;
-            }
-
             ._posts-grid-wrapper_13isk_13,
+            ._posts-grid-wrapper_1ak7n_13,
             ._posts-grid-wrapper_1ak7n_13 {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
@@ -134,6 +102,7 @@
 
             @media (max-width: 980px) {
                 ._posts-grid-wrapper_13isk_13,
+                ._posts-grid-wrapper_1ak7n_13,
                 ._posts-grid-wrapper_1ak7n_13 {
                     grid-template-columns: repeat(3, 1fr) !important;
                 }
@@ -141,19 +110,22 @@
 
             @media (max-width: 768px) {
                 ._posts-grid-wrapper_13isk_13,
+                ._posts-grid-wrapper_1ak7n_13,
                 ._posts-grid-wrapper_1ak7n_13 {
                     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
                 }
             }
 
             ._webview-footer-wrapper_ktriw_10,
-            ._webview-footer-wrapper_hocgj_10 {
+            ._webview-footer-wrapper_hocgj_10,
+            ._webview-footer-wrapper_zrzbg_10 {
                 display: flex;
                 justify-content: center;
             }
 
             ._webview-footer_ktriw_10,
-            ._webview-footer_hocgj_10 {
+            ._webview-footer_hocgj_10,
+            ._webview-footer_zrzbg_10 {
                 position: static;
                 transform: none;
                 max-width: 1920px !important;
@@ -166,7 +138,8 @@
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
         ._post-thumbnail-container_1cp95_10,
-        ._post-thumbnail-container_v2hxm_10 {
+        ._post-thumbnail-container_v2hxm_10,
+        ._post-thumbnail-container_r5i9j_10 {
             if square {
                 aspect-ratio: 1;
             }
@@ -186,7 +159,8 @@
 
         ._user-profile-post-container_tl1o6_10:hover,
         ._post-thumbnail-container_1cp95_10:hover,
-        ._post-thumbnail-container_v2hxm_10:hover {
+        ._post-thumbnail-container_v2hxm_10:hover,
+        ._post-thumbnail-container_r5i9j_10:hover {
             transform: scale(1.05);
             box-shadow: 0px 0px 0px 4px rgb(0 204 204), 0px 10px 45px -10px rgb(0 0 0 / 90%);
             z-index: 1;
@@ -194,14 +168,16 @@
 
         ._user-profile-post-container_tl1o6_10:active,
         ._post-thumbnail-container_1cp95_10:active,
-        ._post-thumbnail-container_v2hxm_10:active {
+        ._post-thumbnail-container_v2hxm_10:active,
+        ._post-thumbnail-container_r5i9j_10:active {
             transition: transform .1s ease-out, box-shadow .25s;
             transform: scale(1);
         }
 
         ._user-profile-post-content_tl1o6_98,
         ._post-thumbnail-content_1cp95_151,
-        ._post-thumbnail-content_v2hxm_152 {
+        ._post-thumbnail-content_v2hxm_152,
+        ._post-thumbnail-content_r5i9j_153 {
             padding-top: 0;
             position: absolute;
             inset: 0;
@@ -212,13 +188,15 @@
 
         ._user-profile-post-container_tl1o6_10:hover ._user-profile-post-content_tl1o6_98,
         ._post-thumbnail-container_1cp95_10:hover ._post-thumbnail-content_1cp95_151,
-        ._post-thumbnail-container_v2hxm_10:hover ._post-thumbnail-content_v2hxm_152 {
+        ._post-thumbnail-container_v2hxm_10:hover ._post-thumbnail-content_v2hxm_152,
+        ._post-thumbnail-container_r5i9j_10:hover ._post-thumbnail-content_r5i9j_153 {
             transform: scale(1);
         }
 
         ._user-profile-post-footer_tl1o6_135,
         ._post-thumbnail-footer_1cp95_192,
-        ._post-thumbnail-footer_v2hxm_193 {
+        ._post-thumbnail-footer_v2hxm_193,
+        ._post-thumbnail-footer_r5i9j_194 {
             background: linear-gradient(rgba(0, 0, 0, .5) 0%, transparent 50%);
             padding: 15px;
             width: 100%;
@@ -398,11 +376,13 @@
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/music") {
     ._profile-page-container_5n5yl_1,
     ._profile-page-container_1ibxg_10,
-    ._profile-page-container_8vceq_10 {
+    ._profile-page-container_8vceq_10,
+    ._profile-page-container_1jt5a_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
         ._post-thumbnail-container_1cp95_10,
-        ._post-thumbnail-container_v2hxm_10 {
+        ._post-thumbnail-container_v2hxm_10,
+        ._post-thumbnail-container_r5i9j_10 {
             aspect-ratio: 1;
         }
     }
@@ -411,11 +391,13 @@
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/movies.*") {
     ._profile-page-container_5n5yl_1,
     ._profile-page-container_1ibxg_10,
-    ._profile-page-container_8vceq_10 {
+    ._profile-page-container_8vceq_10,
+    ._profile-page-container_1jt5a_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
         ._post-thumbnail-container_1cp95_10,
-        ._post-thumbnail-container_v2hxm_10 {
+        ._post-thumbnail-container_v2hxm_10,
+        ._post-thumbnail-container_r5i9j_10 {
             aspect-ratio: 2 / 3;
         }
     }
@@ -424,11 +406,13 @@
 @-moz-document regexp("^https:\\/\\/vero\\.co\\/.*\\/posts\\/videos") {
     ._profile-page-container_5n5yl_1,
     ._profile-page-container_1ibxg_10,
-    ._profile-page-container_8vceq_10 {
+    ._profile-page-container_8vceq_10,
+    ._profile-page-container_1jt5a_10 {
         ._user-profile-post-container_tl1o6_10,
         ._user-profile-post-container-placeholder_tl1o6_181,
         ._post-thumbnail-container_1cp95_10,
-        ._post-thumbnail-container_v2hxm_10 {
+        ._post-thumbnail-container_v2hxm_10,
+        ._post-thumbnail-container_r5i9j_10 {
             aspect-ratio: 3 / 2;
         }
     }
