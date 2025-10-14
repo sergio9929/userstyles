@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20250324.0.0
+@version        20251014.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -93,7 +93,7 @@
     }
 
     #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview:not(.ytp-text-detail) {
-        bottom: 100px !important;
+        bottom: 150px !important;
     }
 
     #player-container-inner .ytp-tooltip.ytp-bottom.ytp-preview.ytp-text-detail {
