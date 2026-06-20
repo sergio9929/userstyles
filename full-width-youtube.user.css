@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20260511.0.0
+@version        20260620.0.0
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -19,6 +19,7 @@
   "Recommended*":           "80rem",
   "Wide":                   "120ch",
 }
+@var            checkbox    thin-sidebar        "Thinner right sidebar"                 0
 @var            checkbox    expand-playlists    "Expand playlists to fill the screen"   0
 @var            checkbox    fill-screen         "Zoom to Fill full screen"              0
 @var            checkbox    progress            "Solid progress bar"                    0
@@ -227,9 +228,14 @@
         }
     }
 
-    if expand-playlists {
-        .ytd-watch-flexy {
+
+    .ytd-watch-flexy {
+        if expand-playlists {
             --ytd-watch-flexy-panel-max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-6x) * 2);
+        }
+
+        if thin-sidebar {
+            --ytd-watch-flexy-sidebar-width: 420px;
         }
     }
 }
