@@ -3,7 +3,7 @@
 @homepageURL    https://userstyles.world/style/538/full-width-youtube
 @supportURL     https://github.com/sergio9929/userstyles/issues
 @namespace      userstyles.world/user/sergio9929
-@version        20260620.0.0
+@version        20260620.0.1
 @description    Take advantage of your large screen
 @author         sergio9929 (https://sergio-rodriguez.web.app/)
 
@@ -74,18 +74,18 @@
     #player-container-outer {
         width: 100% !important;
         max-width: 100% !important;
-        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-6x) * 2) !important;
+        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-3x) * 2) !important;
     }
 
     #player-container-inner #player-container {
-        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-6x) * 2) !important;
+        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-3x) * 2) !important;
     }
 
     #player-container-inner .html5-video-container video {
         width: 100% !important;
         height: auto !important;
         left: 0 !important;
-        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-6x) * 2) !important;
+        max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-3x) * 2) !important;
     }
 
     #player-container-inner .ytp-tooltip.ytp-bottom {
@@ -192,10 +192,6 @@
                 if timeline < 100 {
                     backdrop-filter: blur(timeline * 2px) !important;
                 }
-
-                /* left: var(--sergio-margin) !important;
-                right: var(--sergio-margin) !important;
-                margin: auto !important; */
             }
 
             #player-container-inner .ytp-progress-bar-container {
@@ -231,7 +227,7 @@
 
     .ytd-watch-flexy {
         if expand-playlists {
-            --ytd-watch-flexy-panel-max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-6x) * 2);
+            --ytd-watch-flexy-panel-max-height: calc(100vh - var(--ytd-margin-14x) - var(--ytd-margin-3x) * 2);
         }
 
         if thin-sidebar {
